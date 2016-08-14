@@ -1,0 +1,18 @@
+/* Garden Soil Moisture Sensor test project
+ */
+void setup()
+{
+   Serial.begin(9600); 
+   pinMode(3,INPUT); 
+   pinMode(13,OUTPUT); 
+}
+void loop()
+{
+ int val,val_old;
+ val=digitalRead(3); 
+ digitalWrite(13,val); 
+ val_old=1023-analogRead(0);
+ Serial.print("Moisture Sensor Value:");
+ Serial.println(map(val_old, 0, 1023, 0, 100)); 
+ delay(100);
+}

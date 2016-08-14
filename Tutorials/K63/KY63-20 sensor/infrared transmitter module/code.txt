@@ -1,0 +1,28 @@
+/* IR remitter project
+ * after pushing the switch in remitter circuit, the LED in receiver circuit will turn on, push 
+ * push the switch again, the LED will turn off
+ */
+#include <IRremote.h>
+
+IRsend irsend;
+const int buttonPin = 4; // the number of the pushbutton pin
+int buttonState = 0; // variable for reading the pushbutton status
+void setup()
+{
+pinMode(buttonPin, INPUT);
+Serial.begin(9600);
+}
+
+void loop() {
+
+buttonState = digitalRead(buttonPin);
+
+// check if the pushbutton is pressed.
+// if it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+// turn LED on:
+irsend.sendNEC(0x80BFA15E, 32);
+
+}
+
+}

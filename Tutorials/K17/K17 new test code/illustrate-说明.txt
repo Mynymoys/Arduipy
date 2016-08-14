@@ -1,0 +1,8 @@
+marlin_ramps-2004.zip We are used to test the ramps1.4 firmware, not the latest version, has been configured to support ramps1.4 (singles printing head), support 2004LCD controller.
+
+Marlin_ramps-12864E.rar is to support the version of 12864LCD, pay attention to the compilation before the installation of U8glib to library ARDUINO directory, otherwise the compiler can not.
+
+Marlin_ramps_Thermocouple.rar test version of AD597 thermocouple.
+
+Marlin_ramps-DualE.rar double printer test board.
+
