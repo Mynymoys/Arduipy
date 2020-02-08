@@ -1,3 +1,3 @@
 # Arduipy
 
-My all proejcts for Arduino and Raspberry Pi
+My all projects for Arduino and Raspberry Pi
